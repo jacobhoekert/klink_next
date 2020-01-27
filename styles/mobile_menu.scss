@@ -1,0 +1,45 @@
+#mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+  height: 100vh;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 4;
+  
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+
+  a {
+    font-size: 2rem;
+    padding: 2rem 0;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s linear;
+    cursor: pointer;
+    
+    @media screen and (max-width: 650px) {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    &:hover {
+      color: #f3f3f3;
+    }
+
+    p{
+      text-align: center;
+      margin: 0px;
+      font-family: 'Catamaran';
+
+    }
+  }
+}

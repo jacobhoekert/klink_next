@@ -1,0 +1,111 @@
+#personal-blogs-section{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  h1{
+    font-family: 'Catamaran';
+    font-size: 48px;
+    color: #444;
+    margin-bottom: 0px;
+  }
+
+  #description{
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+    @media screen and (max-width: 980px) {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+
+  #people{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    @media screen and (max-width: 980px) {
+      flex-wrap: wrap;
+    }
+
+    a{
+      width: 18%;
+      height: 400px;
+      background: #000;
+      border-radius: 16px;
+      margin-top: 64px;
+      margin-bottom: 64px;
+      margin-left: 24px;
+      margin-right: 24px;
+      overflow: hidden;
+      transition: transform 400ms;
+      box-shadow: 0px 0px 64px rgba($color: #000, $alpha: 0.2);
+      display: flex;
+      justify-content: center;
+      transform: scale(1);
+
+      @media screen and (max-width: 980px) {
+        width: 40%;
+      }
+      @media screen and (max-width: 980px) {
+        width: 80%;
+        margin-bottom: 5px;
+        margin-top: 20px;
+      }
+
+      .hover-gradient{
+        background: linear-gradient(180deg, rgba($color: #7831D4, $alpha: 0.0), #000000FF);
+        transition: transform 400ms;
+        transform: translateY(50%);
+        width: 100%;
+        height: 100%;
+      }
+
+      .name{
+        font-family: 'Catamaran';
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 0px;
+        position: absolute;
+        bottom: 16px;
+      }
+      
+      &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        div{
+          transform: translateY(20%);
+        }
+      }
+    }
+
+    #kelson{
+      background: url("/team/kelson.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    #nathan{
+      background: url("/team/nathan.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    #troyer{
+      background: url("/team/troyer.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    #jacob{
+      background: url("/team/jacob.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}

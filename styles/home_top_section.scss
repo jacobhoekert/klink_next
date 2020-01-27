@@ -1,0 +1,96 @@
+#landing-section{
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 24px);
+  background: url("/phones-displaying-app.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 980px) {
+    background: white;
+    height: 100vh;
+  }
+
+  #landing-copy{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -64px;
+    @media screen and (max-width: 980px) {
+      margin-left: 75px;
+    }
+    @media screen and (max-width: 650px) {
+      margin: auto;
+      width: 90%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-top: 30px
+    }
+
+    #landing-container{
+      width: 55%;
+      @media screen and (max-width: 980px) {
+        width: 90%;
+      }
+      @media screen and (max-width: 650px) {
+        text-align: center;
+      }
+
+      h1{
+        font-size: 4.5rem;
+        font-family: 'Catamaran';
+        line-height: 4.5rem;
+        color: #373737;
+        margin-bottom: 24px;
+        @media screen and (max-width: 1320px) {
+          font-size: 3.5rem;
+          line-height: 3.5rem;
+        }
+        @media screen and (max-width: 1050px) {
+          font-size: 3.2rem;
+        }
+        @media screen and (max-width: 980px) {
+          font-size: 4.5rem;
+          line-height: 4.5rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 3.2rem;
+          line-height: 3.2rem;
+        }
+      }
+
+      #landing-words{
+        font-family: 'Roboto';
+        font-size: 1.5rem;
+        
+        @media screen and (max-width: 1320px) {
+          font-size: 1.2rem;
+        }
+        @media screen and (max-width: 1050px) {
+          font-size: 1.0rem;
+        }
+        @media screen and (max-width: 980px) {
+          font-size: 1.5rem;
+        }
+        @media screen and (max-width: 650px) {
+          font-size: 1.3rem;
+        }
+      }
+
+      #landing-get-early-text{
+        font-family: 'Catamaran';
+        font-weight: 600;
+        color: #7831D4;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-top: 16px;
+        @media screen and (max-width: 650px) {
+          margin-bottom: 4px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

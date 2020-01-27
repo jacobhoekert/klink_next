@@ -1,0 +1,60 @@
+#waitlist{
+
+  #waitlist-form{
+    margin-bottom: 10px;
+    margin-top: 16px;
+    background: #fff;
+    border: #444 solid 3px;
+    border-radius: 36px;
+    width: 300px;
+    box-shadow: 0px 0px 6px rgba($color: #000, $alpha: 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 650px) {
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    label{
+      display: none;
+    }
+
+    input{
+      border-radius: 36px;
+      transition-duration: 400ms;
+      border: none;
+      font-size: 17px;
+      padding: 13px 24px;
+      font-family: 'Roboto';
+
+      &:focus{
+        outline: none !important;
+        background: rgba($color: rgb(107, 28, 211), $alpha: 0.1);
+      }
+    }
+    button{
+      background: none;
+      border: none;
+      padding: 0;
+      outline: none;
+
+      i{
+        color: #7831D4;
+        transition-duration: 200ms;
+        margin-right: 14px;
+        font-size: 27px;
+    
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.15);
+        }
+      }
+    }
+  }
+  .display-message {
+    height: 0px;
+    overflow: visible;
+    margin-left: 20px;
+  }
+}
