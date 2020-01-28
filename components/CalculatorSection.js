@@ -38,7 +38,7 @@ const CalculatorSection = () => {
     <>
     <section id="calculator-section">
       <div id="calculator-wrapper">
-        <h1>You share with donors.<br/>We bring you funds. </h1> 
+        <h2>You share with donors.<br/>We bring you funds. </h2> 
         <div id="calculator-container">
           <div className="sliders-container">
             <div className="slider1">

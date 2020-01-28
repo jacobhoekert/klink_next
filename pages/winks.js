@@ -19,10 +19,10 @@ const WinksPage = () => {
   return (
     <>
       <Head>
-        <title>Klink Fundriasing App | The Best and Easy Way to Raise Support</title>
+        <title>Klink Winks: Fundraising Tips and Ideas | How to Raise Consistent Support</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
+        <meta name="description" content="Klink Winks is a free content platform offering you the best fundraising tips and advice from experts who have raised a lot of money. Subscribe today!" />
         <link rel="icon" href="/favicon.jpg" />
         <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>

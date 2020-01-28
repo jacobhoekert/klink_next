@@ -19,10 +19,10 @@ const TeamPage = () => {
   return (
     <>
       <Head>
-        <title>Klink Fundriasing App | The Best and Easy Way to Raise Support</title>
+        <title>Klink Fundraising | Meet Our Mission and Founding Team</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
+        <meta name="description" content="Klink's mission is to help missionaries and difference makers fundraise so they can change their communities and the world. Meet the founding team and hear our story." />
         <link rel="icon" href="/favicon.jpg" />
         <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>

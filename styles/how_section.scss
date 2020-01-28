@@ -15,21 +15,23 @@
   h1 {
     font-family: 'Catamaran';
     font-size: 48px;
+    line-height: 48px;
     color: #444;
     margin-top: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    text-align: center;
     @media screen and (max-width: 650px) {
       font-size: 38px;
+      margin-bottom: 10px;
     }
   }
   h2 {
-    font-family: 'Catamaran';
-    font-size: 30px;
-    line-height: 30px;
+    font-family: 'Roboto';
+    font-size: 25px;
     color: #444;
     margin: 0px;
     @media screen and (max-width: 650px) {
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 
@@ -45,8 +47,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-    margin-top: 70px;
+    width: 45vw;
+    margin-top: 100px;
     border-radius: 64px;
     @media screen and (max-width: 950px) {
       width: 80vw;
@@ -59,8 +61,8 @@
     }
 
     .step-image{
-      width: 100px;
-      height: 100px;
+      width: 120px;
+      height: 120px;
       color: #444;
       border: 3px solid #444;
       border-radius: 20px;
@@ -88,14 +90,16 @@
         text-align: center;
       }
 
-      h2{
-        font-size: 25px;
-        font-weight: 700;
+      h3{
+        font-size: 40px;
+        font-weight: 600;
+        font-family: 'Catamaran';
         color: #444;
         margin-top: 0px;
         margin-bottom: 10px;
         @media screen and (max-width: 650px) {
           margin-bottom: 20px;
+          font-size: 35px;
         }
       }
 

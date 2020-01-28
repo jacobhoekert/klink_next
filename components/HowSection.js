@@ -8,7 +8,7 @@ const HowStep = (props) => {
         <p>{props.number}</p>
       </div>
       <div className="step-text">
-        <h2>{props.title}</h2>
+        <h3>{props.title}</h3>
         <p className="step-desc">{props.desc}</p>
       </div>
     </div>
@@ -18,12 +18,12 @@ const HowStep = (props) => {
 const HowSection = () => {
   return (
     <section id="how-section">
-      <h1>It's as simple as 1 2 3</h1>
-      <h2>How it Works</h2> 
+      <h1>The Best App To Help You Fundraise</h1>
+      <h2>How You Get Funded With Klink</h2> 
       <HowStep 
         number="1"
         title="Download the App"
-        desc="Setting up an account takes less than a minute. Coming soon to the Apple App Store and Google Play Store."
+        desc="Setting up an account is easy and takes less than a minute. Coming soon to the Apple App Store and Google Play Store."
       />
       <HowStep 
         number="2"
@@ -32,8 +32,8 @@ const HowSection = () => {
       />
       <HowStep 
         number="3"
-        title="Share with Donors and Get Funded"
-        desc="Present your campaign to your donors and watch as their credit/debit card transaction roundups are deposited directly to your account."
+        title="Share with Donors"
+        desc="Donors can download the app and search for your campaign. Watch as their credit/debit card transaction roundups are deposited directly to your account."
       />
     </section>
   )

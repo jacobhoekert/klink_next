@@ -15,10 +15,10 @@ const ContactPage = () => {
   return (
     <>
       <Head>
-        <title>Klink Fundriasing App | The Best and Easy Way to Raise Support</title>
+        <title>Klink Fundriasing App | Contact Us for Questions About How to Fundraise </title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="" />
+        <meta name="description" content="Contact Klink Fundraising today if you have any questions about our app, how to fundraise, or have any ideas for us!" />
         <link rel="icon" href="/favicon.jpg" />
         <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>

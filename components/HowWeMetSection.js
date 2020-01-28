@@ -8,7 +8,7 @@ const HowWeMetSection = () => {
         <img src="/boyband.jpeg" alt="Klink's founding team Troyer, Nathan, Jacob, and Kelson"/>
       </div>
       <div id="right">
-        <h1>How We Met</h1>
+        <h2>How We Met</h2>
         <p>The four of us (Kelson Mudd, Nathan Bird, Troyer Morse, and Jacob Hoekert) met on a Christian Gap Year program called GlobalU. Within the first month of the program, we united under a common goal to minimize the burden of fundraising and shortly after, Klink Fundraising was born.</p>
       </div>
     </section>

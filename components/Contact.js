@@ -57,7 +57,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <form id="contact-form" onSubmit={handleSubmit} method="POST">
-        <h1>Contact Us</h1>
+        <h2>Contact Us</h2>
         <p id="description">If you would like to ask a question about fundraising, share a story about something that worked for you, or just say hi, send us a message through the form below!</p>
         <div id="questions">
           <div id="names">
