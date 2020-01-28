@@ -12,10 +12,10 @@ const TreasureHuntProgress = () => {
         {({progress, setProgress}) => (
           <>
             {active && !found.includes('done') ?
-            <div id="progress-container" onClick={() => {if(found.length === 3){setProgress(2)}}} class={found.length < 3 ? '' : 'completed'}>
+            <div id="progress-container" onClick={() => {if(found.length === 3){setProgress(2)}}} className={found.length < 3 ? '' : 'completed'}>
               <div id="progress-card">
                 <img id="coin-image" src={coin}/>
-                {found.length < 3 ? <div><p>{found.length+" of 3"}</p></div> : <div><p>Completed!</p><i class="material-icons">arrow_forward</i></div> }
+                {found.length < 3 ? <div><p>{found.length+" of 3"}</p></div> : <div><p>Completed!</p><i className="material-icons">arrow_forward</i></div> }
               </div>
             </div> : <></>}
           </>

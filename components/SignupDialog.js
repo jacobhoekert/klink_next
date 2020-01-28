@@ -84,7 +84,7 @@ const SignupDialog = ({progress, setProgress}) => {
           <div id="info-card">
             <div id="header">
               <h3>Create an Account!</h3>
-              <i class="material-icons" onClick={() => {setProgress(0);}}>close</i>
+              <i className="material-icons" onClick={() => {setProgress(0);}}>close</i>
             </div>
             <div id="content">
               <input id="account-name" name="name" type="name" value={form.name} onChange={(e) => updateForm(e)} placeholder="First & Last Name"/>

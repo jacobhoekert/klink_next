@@ -7,7 +7,7 @@ const ThankYouDialog = ({progress, setProgress}) => {
       <div id="info-card">
         <div id="header">
           <h3>Account Created!</h3>
-          <i class="material-icons" onClick={() => {setProgress(0);}}>close</i>
+          <i className="material-icons" onClick={() => {setProgress(0);}}>close</i>
         </div>
         <div id="content">
           <p>Thanks for creating an account! We'll send you an email as soon as the app is ready</p>

@@ -9,7 +9,7 @@ const SubscribeSection = () => {
     <section id="subscribe-section">
       <CoinContext.Consumer>
         {({active, found, addOne}) => (
-          <div id="coin-container" class={found.includes('second') || !active ? "found" : ""}>
+          <div id="coin-container" className={found.includes('second') || !active ? "found" : ""}>
             <img id="coin-image" src={coin} onClick={() => {addOne('second')}}/>
           </div>
         )}

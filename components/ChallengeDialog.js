@@ -10,7 +10,7 @@ const ChallengeDialog = ({progress, setProgress}) => {
           <div id="info-card">
             <div id="header">
               <h3>The Klink Challenge</h3>
-              <i class="material-icons" onClick={() => {setProgress(0)}}>close</i>
+              <i className="material-icons" onClick={() => {setProgress(0)}}>close</i>
             </div>
             <div id="content">
               <div>

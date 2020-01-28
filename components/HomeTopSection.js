@@ -13,7 +13,7 @@ const HomeTopSection = () => {
         {({active, found, addOne, enabled}) => (
           <DialogContext.Consumer>
             {({progress, setProgress}) => (
-              <div id="coin-container" class={found.includes('first') || !enabled ? "found" : ""}>
+              <div id="coin-container" className={found.includes('first') || !enabled ? "found" : ""}>
                 <img id="coin-image" src={coin} onClick={() => {setProgress(1);}}/>
               </div>
             )}
