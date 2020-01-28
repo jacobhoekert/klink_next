@@ -13,7 +13,7 @@ const MissionSection = () => {
       <div id="right">
         <CoinContext.Consumer>
           {({active, found, addOne}) => (
-            <div id="coin-container" class={found.includes('third') || !active ? "found" : "found"}>
+            <div id="coin-container" class={found.includes('third') || !active ? "found" : ""}>
               <img id="coin-image" src={coin} onClick={() => {addOne('third')}}/>
             </div>
           )}

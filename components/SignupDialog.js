@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import db from '../firebaseConfig';
+import {db, auth} from '../firebaseConfig';
 import {CoinContext} from '../contexts/CoinContext';
 
 const SignupDialog = ({progress, setProgress}) => {
@@ -64,7 +64,9 @@ const SignupDialog = ({progress, setProgress}) => {
       });
       localStorage.setItem("treasure", true);
       try {
-        //auth.createUserWithEmailAndPassword(form.email, form.password);
+        auth.createUserWithEmailAndPassword(form.email, form.password).then((result) => {
+          console.log(result);
+        });
       } catch (e) {console.log(e)}
       setProgress(4);
       onFinish();

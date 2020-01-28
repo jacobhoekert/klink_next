@@ -5,15 +5,13 @@
   align-items: center;
   padding-left: 10vw;
   padding-right: 10vw;
-  padding-top: 32px;
-  padding-bottom: 64px;
+
   @media screen and (max-width: 650px) {
     width: 100%;
     padding: 0px;
     margin-bottom: -50px;
     overflow: hidden;
     background: #333;
-
   }
 
   #contact-form{

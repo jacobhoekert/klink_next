@@ -4,9 +4,10 @@ section{
 
 #landing-section{
   display: flex;
-  height: calc(100vh - 24px);
+  height: calc(100vh - 32px);
   background: url("/phones-displaying-app.jpg");
   background-position: right;
+  background-position-y: 32px;
   background-size: cover;
   background-repeat: no-repeat;
   

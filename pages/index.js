@@ -18,26 +18,7 @@ import DialogManager from '../components/DialogManager';
 const Home = () => {
   const [open, setOpen] = useState(false);
 
-  const addOne = (id) => {
-    setCoinProgress(state => ({
-      ...state,
-      found: [...state.found, id],
-      active: true
-    }));
-  }
-
-  const setProgress = (progress) => {
-    setDialogProgress(state => ({
-      ...state,
-      progress: progress
-    }));
-  }
-
-  const [coinProgress, setCoinProgress] = useState({active: false, found: [], addOne: addOne, enabled: false});
-  const [dialogProgress, setDialogProgress] = useState({progress: 0, setProgress: setProgress});
-
   useEffect(() => {
-    setCoinProgress({active: false, found: [], addOne: addOne, enabled: localStorage.getItem("treasure") == null ? true : false})
     window.scrollTo(0,0);
   }, [])
 
@@ -49,6 +30,10 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Klink is mobile app that makes support raising easy by rounding up donors' credit card transactions. Quickly create a campaign for your mission trip or cause today." />
         <link rel="icon" href="/favicon.jpg" />
+        <script>
+          const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', vh+'px');
+        </script>
       </Head>
       <nav>
         <NavBar />
@@ -60,17 +45,13 @@ const Home = () => {
         }
       </nav>
       <main>
-        <CoinContext.Provider value={coinProgress}>
-          <DialogContext.Provider value={dialogProgress}>
-            <HomeTopSection />
-            <HowSection />
-            <CalculatorSection />
-            <QuoteBoxSection />
-            <EarlyAccessSection />
-            <TreasureHuntProgress/>
-            <DialogManager/>
-          </DialogContext.Provider>
-        </CoinContext.Provider>
+        <HomeTopSection />
+        <HowSection />
+        <CalculatorSection />
+        <QuoteBoxSection />
+        <EarlyAccessSection />
+        <TreasureHuntProgress/>
+        <DialogManager/>
       </main>
       <footer>
         <Footer />

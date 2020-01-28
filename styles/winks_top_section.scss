@@ -1,14 +1,18 @@
 #winks-top-section{
   display: flex;
-  height: 100vh;
+  height: calc(100vh - 32px);
   background: url("/envelope.jpg");
   background-position: right;
+  background-position-y: 32px;
   background-size: cover;
   background-repeat: no-repeat;
   
   @media screen and (max-width: 980px) {
     background: white;
-    height: 100vh;
+  }
+
+  @media screen and (max-width: 600px) {
+    height: calc(var(--vh, 1vh) * 100 - 32px);
   }
 
   #winks-copy{
