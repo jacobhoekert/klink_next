@@ -1,6 +1,5 @@
 #mission-section{
   display: flex;
-  width: 80vw;
   justify-content: center;
   box-shadow: 0px -64px 64px rgba($color: #7831D4, $alpha: 0.06);
   align-items: center;
@@ -8,6 +7,7 @@
   padding-right: 10vw;
   padding-top: 64px;
   padding-bottom: 64px;
+
   @media screen and (max-width: 980px) {
     flex-wrap: wrap;
     padding-top: 20px;
@@ -35,9 +35,58 @@
   }
 
   #right{
+    position: relative;
+
     @media screen and (max-width: 980px) {
       width: 100%;
     }
+
+    #coin-container{
+      overflow: hidden;
+      position: absolute;
+      left: 40%;
+      top: calc(50% - 50px - 200px - 2px);
+
+      @media screen and (max-width: 1350px) {
+        top: calc(50% - 50px - 160px - 2px);
+      }
+
+      height: 50px;
+      width: 100px;
+      transition-duration: 600ms;
+      cursor: pointer;
+  
+      #coin-image{
+        transform: rotate(-120deg);
+        height: 100px;
+        width: 100px;
+        transition-duration: 600ms;
+      }
+  
+      &:hover{
+        height: 110px;
+        width: 136px;
+        padding-left: 36px;
+        top: calc(50% - 110px - 200px - 2px);
+        #coin-image{
+          transform: rotate(0deg);
+        }
+
+        @media screen and (max-width: 1350px) {
+          top: calc(50% - 110px - 160px - 2px);
+        }
+      }
+  
+      &.found{
+        height: 0px;
+        top: calc(50% - 200px - 2px);
+        
+        @media screen and (max-width: 1350px) {
+          top: calc(50% - 160px - 2px);
+        }
+      }
+    }
+
     img{
       width: 540px;
       height: 400px;

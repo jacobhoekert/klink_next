@@ -7,7 +7,7 @@ const CalculatorSection = () => {
   const [totalAmount, setTotalAmount] = useState("1000");
 
   useEffect(() => {
-    const total = donorAmount * monthAmount * 12;
+    const total = donorAmount * monthAmount * 13;
     const totalString = total.toString();
     let formattedTotal = '';
     if (totalString.length == 4) {

@@ -24,8 +24,6 @@ const TeamPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.jpg" />
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>
       </Head>
       <nav>
         <NavBar />

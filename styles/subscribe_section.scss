@@ -1,23 +1,51 @@
 #subscribe-section{
   display: flex;
   flex-direction: column;
-  width: 80vw;
   justify-content: center;
   align-items: center;
   padding-left: 10vw;
   padding-right: 10vw;
   padding-top: 32px;
   padding-bottom: 64px;
+  position: relative;
   @media screen and (max-width: 650px) {
-    padding: 20px;
-    margin: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    padding: 100px 20px;
     height: auto;
   }
 
   @media screen and (max-width: 650px) {
     text-align: center;
+  }
+
+  #coin-container{
+    overflow: hidden;
+    position: absolute;
+    right: 64px;
+    bottom: 0px;
+    height: 50px;
+    width: 100px;
+    transition-duration: 600ms;
+    cursor: pointer;
+
+    #coin-image{
+      transform: rotate(-120deg);
+      height: 100px;
+      width: 100px;
+      transition-duration: 600ms;
+    }
+
+    &:hover{
+      height: 120px;
+      width: 136px;
+      padding-left: 36px;
+      #coin-image{
+        transform: rotate(0deg);
+      }
+    }
+
+    &.found{
+      height: 0px;
+    }
   }
 
   h1{

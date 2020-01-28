@@ -8,11 +8,34 @@ import Footer from '../components/Footer';
 import SubscribeSection from '../components/SubscribeSection';
 import Burger from '../components/Burger';
 import MobileMenu from '../components/MobileMenu';
+import TreasureHuntProgress from '../components/TreasureHuntProgress';
+import {CoinContext} from '../contexts/CoinContext';
+import {DialogContext} from '../contexts/DialogContext';
+import DialogManager from '../components/DialogManager';
 
 const WinksPage = () => {
   const [open, setOpen] = useState(false);
 
+  const addOne = (id) => {
+    setCoinProgress(state => ({
+      ...state,
+      found: [...state.found, id],
+      active: true
+    }));
+  }
+
+  const setProgress = (progress) => {
+    setDialogProgress(state => ({
+      ...state,
+      progress: progress
+    }));
+  }
+
+  const [coinProgress, setCoinProgress] = useState({active: false, found: [], addOne: addOne, enabled: false});
+  const [dialogProgress, setDialogProgress] = useState({progress: 0, setProgress: setProgress});
+
   useEffect(() => {
+    setCoinProgress({active: false, found: [], addOne: addOne, enabled: localStorage.getItem("treasure") == null ? true : false})
     window.scrollTo(0,0);
   }, [])
 
@@ -24,8 +47,6 @@ const WinksPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="" />
         <link rel="icon" href="/favicon.jpg" />
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>
       </Head>
       <nav>
         <NavBar />
@@ -37,10 +58,16 @@ const WinksPage = () => {
         }
       </nav>
       <main>
-        <WinksTopSection />
-        <TipsSection />
-        <Contact />
-        <SubscribeSection />
+        <CoinContext.Provider value={coinProgress}>
+          <DialogContext.Provider value={dialogProgress}>
+            <WinksTopSection />
+            <TipsSection />
+            <Contact />
+            <SubscribeSection />
+            <TreasureHuntProgress/>
+            <DialogManager/>
+          </DialogContext.Provider>
+        </CoinContext.Provider>
       </main>
       <footer>
         <Footer />

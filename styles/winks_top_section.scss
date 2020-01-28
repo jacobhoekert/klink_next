@@ -1,11 +1,11 @@
 #winks-top-section{
   display: flex;
-  width: 100vw;
   height: 100vh;
   background: url("/envelope.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
+  
   @media screen and (max-width: 980px) {
     background: white;
     height: 100vh;
