@@ -10,6 +10,10 @@ import QuoteBoxSection from '../components/QuoteBoxSection';
 import Burger from '../components/Burger';
 import MobileMenu from '../components/MobileMenu';
 import '../styles/global.css';
+import TreasureHuntProgress from '../components/TreasureHuntProgress';
+import {CoinContext} from '../contexts/CoinContext';
+import {DialogContext} from '../contexts/DialogContext';
+import DialogManager from '../components/DialogManager';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -26,8 +30,10 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Klink is mobile app that makes support raising easy by rounding up donors' credit card transactions. Quickly create a campaign for your mission trip or cause today." />
         <link rel="icon" href="/favicon.jpg" />
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>
+        <script>
+          const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', vh+'px');
+        </script>
       </Head>
       <nav>
         <NavBar />
@@ -44,6 +50,8 @@ const Home = () => {
         <CalculatorSection />
         <QuoteBoxSection />
         <EarlyAccessSection />
+        <TreasureHuntProgress/>
+        <DialogManager/>
       </main>
       <footer>
         <Footer />

@@ -8,6 +8,8 @@ import PersonalBlogsSection from '../components/PersonalBlogsSection';
 import Footer from '../components/Footer';
 import Burger from '../components/Burger';
 import MobileMenu from '../components/MobileMenu';
+import TreasureHuntProgress from '../components/TreasureHuntProgress';
+import DialogManager from '../components/DialogManager';
 
 const TeamPage = () => {
   const [open, setOpen] = useState(false);
@@ -24,8 +26,10 @@ const TeamPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Klink's mission is to help missionaries and difference makers fundraise so they can change their communities and the world. Meet the founding team and hear our story." />
         <link rel="icon" href="/favicon.jpg" />
-        <link href="https://fonts.googleapis.com/css?family=Catamaran:600|Roboto&display=swap" rel="stylesheet" async />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" async/>
+        <script>
+          const vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', vh+'px');
+        </script>
       </Head>
       <nav>
         <NavBar />
@@ -41,6 +45,8 @@ const TeamPage = () => {
         <MissionSection />
         <HowWeMetSection />
         <PersonalBlogsSection />
+        <TreasureHuntProgress />
+        <DialogManager/>
       </main>
       <footer>
         <Footer />

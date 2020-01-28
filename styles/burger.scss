@@ -16,6 +16,10 @@
   @media screen and (max-width: 650px) {
     visibility: visible;
   }
+
+  &.fixed{
+    position: fixed;
+  }
   
   &:focus {
     outline: none;

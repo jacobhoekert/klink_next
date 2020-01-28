@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import validator from 'validator';
-import db from '../firebaseConfig';
+import {db} from '../firebaseConfig';
 import '../styles/email_form.scss';
 import newId from '../utils/newId';
 
