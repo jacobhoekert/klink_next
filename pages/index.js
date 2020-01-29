@@ -44,6 +44,7 @@ const Home = () => {
         )}
       </nav>
       <main>
+      <body>
         <HomeTopSection />
         <HowSection />
         <CalculatorSection />
@@ -51,6 +52,7 @@ const Home = () => {
         <EarlyAccessSection />
         <TreasureHuntProgress />
         <DialogManager />
+      </body>
       </main>
       <footer>
         <Footer />
