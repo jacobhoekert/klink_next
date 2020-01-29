@@ -8,10 +8,15 @@ const EmailForm = (props) => {
   const [ inputValue, setInputValue] = useState('');
   const [ isValidEmail, setEmailValidity ] = useState([false]);
   const [ hasSubmitted, setHasSubmitted ] = useState(false);
-  const [ formId, setFormId] = useState('');
+  
+  const [ waitlistID, setWaitlistID] = useState('');
+  const [ waitlistFormID, setWaitlistFormID] = useState('');
+  const [ emailID, setEmailID] = useState('');
 
   useEffect(() => {
-    setFormId(newId());
+    setWaitlistID(newId());
+    setWaitlistFormID(newId());
+    setEmailID(newId());
   }, []);
 
   useEffect(() => {
@@ -57,11 +62,13 @@ const EmailForm = (props) => {
   }
 
   return (
-    <div id="waitlist">
-      <form id="waitlist-form" onSubmit={handleSubmit}> 
-        <label htmlFor={formId}>Email Address</label> {/* Hidden – Here for screen readers */}
+    <div id={waitlistID} className="waitlist">
+      <form id={waitlistFormID} className="waitlist-form" onSubmit={handleSubmit}> 
+        <div className="hidden-label">
+          <label htmlFor={emailID}>Email Address</label>
+        </div> {/* Hidden – Here for screen readers */}
         <input 
-          id={formId}
+          id={emailID}
           placeholder="Email Address"
           onChange={handleInputChange}
         />

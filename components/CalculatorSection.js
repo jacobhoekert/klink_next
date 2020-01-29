@@ -44,7 +44,7 @@ const CalculatorSection = () => {
             <div className="slider1">
               <div className="slider-text">{donorAmount} donors</div>
               <div className="range">
-                  <label htmlFor="slider1">Donor Range Slider</label> {/* Hidden – Here for screen readers */}
+                  <div className="hidden-label"><label htmlFor="slider1">Donor Range Slider</label></div> {/* Hidden – Here for screen readers */}
                 0 <input 
                   id="slider1"
                   type="range" 
@@ -59,7 +59,7 @@ const CalculatorSection = () => {
             <div className="slider2">
               <div className="slider-text">{monthAmount} months fundraising</div>
               <div className="range">
-                  <label htmlFor="slider2">Month Range Slider</label> {/* Hidden – Here for screen readers */}
+                  <div className="hidden-label"><label htmlFor="slider2">Month Range Slider</label></div> {/* Hidden – Here for screen readers */}
                 0 <input 
                   id="slider2"
                   type="range"

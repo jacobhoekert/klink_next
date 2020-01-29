@@ -1,6 +1,6 @@
-#waitlist{
+.waitlist{
 
-  #waitlist-form{
+  .waitlist-form{
     margin-bottom: 10px;
     margin-top: 16px;
     background: #fff;
@@ -14,10 +14,6 @@
     @media screen and (max-width: 650px) {
       margin-top: 10px;
       width: 100%;
-    }
-
-    label{
-      display: none;
     }
 
     input{
