@@ -87,7 +87,7 @@ const SignupDialog = ({progress, setProgress}) => {
               <i className="material-icons" onClick={() => {setProgress(0);}}>close</i>
             </div>
             <div id="content">
-              <input id="account-name" name="name" type="name" value={form.name} onChange={(e) => updateForm(e)} placeholder="First & Last Name"/>
+              <input id="account-name" name="name" type="name" value={form.name} onChange={(e) => updateForm(e)} placeholder="First and Last Name"/>
               <input id="account-email" name="email" type="email" value={form.email} onChange={(e) => updateForm(e)} placeholder="Email Address"/>
               <input id="account-number" name="number" type="tel" value={form.number} onChange={(e) => updateForm(e)} placeholder="Phone Number"/>
               <input id="account-password" name="password" type="password" value={form.password} onChange={(e) => updateForm(e)} placeholder="Password"/>

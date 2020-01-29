@@ -26,10 +26,6 @@ const TeamPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Klink's mission is to help missionaries and difference makers fundraise so they can change their communities and the world. Meet the founding team and hear our story." />
         <link rel="icon" href="/favicon.jpg" />
-        <script>
-          const vh = window.innerHeight * 0.01;
-          document.documentElement.style.setProperty('--vh', vh+'px');
-        </script>
       </Head>
       <nav>
         <NavBar />

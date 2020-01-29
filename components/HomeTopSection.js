@@ -14,7 +14,7 @@ const HomeTopSection = () => {
           <DialogContext.Consumer>
             {({progress, setProgress}) => (
               <div id="coin-container" className={found.includes('first') || !enabled ? "found" : ""}>
-                <img id="coin-image" src={coin} onClick={() => {setProgress(1);}}/>
+                <img id="coin-image" src={coin} alt="clickable coin" onClick={() => {setProgress(1);}}/>
               </div>
             )}
           </DialogContext.Consumer>

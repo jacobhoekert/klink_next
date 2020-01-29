@@ -28,10 +28,6 @@ const WinksPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Klink Winks is a free content platform offering you the best fundraising tips and advice from experts who have raised a lot of money. Subscribe today!" />
         <link rel="icon" href="/favicon.jpg" />
-        <script>
-          const vh = window.innerHeight * 0.01;
-          document.documentElement.style.setProperty('--vh', vh+'px');
-        </script>
       </Head>
       <nav>
         <NavBar />
