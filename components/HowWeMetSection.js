@@ -5,7 +5,12 @@ const HowWeMetSection = () => {
   return (
     <section id="how-we-met-section">
       <div id="left">
-        <img src="/boyband.jpeg" alt="Klink's founding team Troyer, Nathan, Jacob, and Kelson"/>
+        <img 
+          src="/boyband.jpeg" 
+          alt="Klink's founding team Troyer, Nathan, Jacob, and Kelson"
+          width="100%"
+          height="auto"
+        />
       </div>
       <div id="right">
         <h2>How We Met</h2>

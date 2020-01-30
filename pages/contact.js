@@ -32,9 +32,11 @@ const ContactPage = () => {
         }
       </nav>
       <main>
+      <body>
         <div style={{height: "150px"}}></div>
         <Contact />
         <TreasureHuntProgress/>
+      </body>
       </main>
     </>
   )

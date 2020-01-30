@@ -8,7 +8,7 @@ const MissionSection = () => {
     <section id="mission-section">
       <div id="left">
         <h2>Our Mission</h2>
-        <p>Here at Klink Fundraising, we seek to activate all generations in using their resources to make a difference by removing barriers presented to those who rely on community-raised support. We operate with the purpose of streamlining the flow of resources to magnify the impact felt on both local communities and the global mission field.</p>
+        <p>Here at Klink Fundraising we seek to activate the world changers and difference makers in all generations by equipping them with better tools and training for raising financial support.</p>
       </div>
       <div id="right">
         <CoinContext.Consumer>
@@ -18,7 +18,12 @@ const MissionSection = () => {
             </div>
           )}
         </CoinContext.Consumer>
-        <img src="/backpack.jpg" alt="adventure backpack with journal and currency next to it"/>
+        <img 
+          src="/backpack.jpg"
+          alt="adventure backpack with journal and currency next to it"
+          width="100%"
+          height="auto"
+        />
       </div>
     </section>
   )

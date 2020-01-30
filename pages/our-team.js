@@ -37,12 +37,14 @@ const TeamPage = () => {
         }
       </nav>
       <main>
+      <body>
         <TeamTopSection />
         <MissionSection />
         <HowWeMetSection />
         <PersonalBlogsSection />
         <TreasureHuntProgress />
         <DialogManager/>
+      </body>
       </main>
       <footer>
         <Footer />

@@ -39,12 +39,14 @@ const WinksPage = () => {
         }
       </nav>
       <main>
+      <body>
         <WinksTopSection />
         <TipsSection />
         <Contact />
         <SubscribeSection />
         <TreasureHuntProgress/>
         <DialogManager/>
+      </body>
       </main>
       <footer>
         <Footer />
