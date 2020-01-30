@@ -1,21 +1,27 @@
 import React from 'react';
 import Link from 'next/link';
 import '../styles/footer.scss';
+import mixpanel from 'mixpanel-browser';
 
 const Footer = () => {
-   return (
+
+  const sendEvent = (event, props) => {
+    mixpanel.track(event, props);
+  }
+
+  return (
     <div id="footer">
       <div id="options">
         <div className="option">
-          <Link href="/winks"><h1>Winks</h1></Link>
+          <Link href="/winks"><div><h1 onClick={() => {sendEvent("Navigate", {"To": "Winks", "Position": "Bottom"})}}>Winks</h1></div></Link>
           <i className="material-icons">arrow_forward</i>
         </div>
         <div className="option">
-          <Link href="/our-team"><h1>Our Team</h1></Link>
+          <Link href="/our-team"><div><h1 onClick={() => {sendEvent("Navigate", {"To": "Team", "Position": "Bottom"})}}>Our Team</h1></div></Link>
           <i className="material-icons">arrow_forward</i>
         </div>
         <div className="option">
-          <Link href="/contact"><h1>Contact</h1></Link>
+          <Link href="/contact"><div><h1 onClick={() => {sendEvent("Navigate", {"To": "Contact", "Position": "Bottom"})}}>Contact</h1></div></Link>
           <i className="material-icons">arrow_forward</i>
         </div>
       </div>

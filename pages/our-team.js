@@ -10,12 +10,14 @@ import Burger from '../components/Burger';
 import MobileMenu from '../components/MobileMenu';
 import TreasureHuntProgress from '../components/TreasureHuntProgress';
 import DialogManager from '../components/DialogManager';
+import mixpanel from 'mixpanel-browser';
 
 const TeamPage = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0,0);
+    mixpanel.track("Team Visit");
   }, [])
 
   return (

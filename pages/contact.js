@@ -5,12 +5,14 @@ import Contact from '../components/Contact';
 import Burger from '../components/Burger';
 import MobileMenu from '../components/MobileMenu';
 import TreasureHuntProgress from '../components/TreasureHuntProgress';
+import mixpanel from 'mixpanel-browser';
 
 const ContactPage = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0,0);
+    mixpanel.track("Contact Visit");
   }, [])
 
   return (

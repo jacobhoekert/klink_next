@@ -9,15 +9,15 @@ import SubscribeSection from '../components/SubscribeSection';
 import Burger from '../components/Burger';
 import MobileMenu from '../components/MobileMenu';
 import TreasureHuntProgress from '../components/TreasureHuntProgress';
-import {CoinContext} from '../contexts/CoinContext';
-import {DialogContext} from '../contexts/DialogContext';
 import DialogManager from '../components/DialogManager';
+import mixpanel from 'mixpanel-browser';
 
 const WinksPage = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0,0);
+    mixpanel.track("Winks Visit");
   }, [])
 
   return (

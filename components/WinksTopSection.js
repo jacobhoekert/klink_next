@@ -1,6 +1,7 @@
 import React from 'react';
 import EmailForm from './EmailForm';
 import '../styles/winks_top_section.scss';
+import mixpanel from 'mixpanel-browser';
 
 const WinksTopSection = () => {
   return (
@@ -13,6 +14,7 @@ const WinksTopSection = () => {
           <EmailForm
             databaseCollection="winks" 
             successMessage="Thanks for signing up for Klink Winks!"
+            onSuccess={(email) => {mixpanel.track("Winks Join", {"Position": "Top"}); mixpanel.people.set({"$email" : email})}}
           />
         </div>
       </div>

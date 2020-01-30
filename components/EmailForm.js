@@ -31,7 +31,7 @@ const EmailForm = (props) => {
   }
 
   const resetForm = () => {
-    document.getElementById("waitlist-form").reset();
+    document.getElementById(waitlistFormID).reset();
   }
  
   const handleSubmit = (e) => {
@@ -44,6 +44,7 @@ const EmailForm = (props) => {
       })
       .then(function() {
         console.log("Document successfully written!");
+        props.onSuccess(inputValue);
       })
       .catch(function(error) {
         console.error("Error writing document: ", error);

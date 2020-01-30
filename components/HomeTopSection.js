@@ -4,6 +4,7 @@ import '../styles/home_top_section.scss';
 import coin from '../public/coin.png';
 import {CoinContext} from '../contexts/CoinContext';
 import {DialogContext} from '../contexts/DialogContext';
+import mixpanel from 'mixpanel-browser';
 
 const HomeTopSection = () => {
   return (
@@ -29,6 +30,7 @@ const HomeTopSection = () => {
           <EmailForm
             databaseCollection="waitlist" 
             successMessage="Thanks for joining our waitlist!"
+            onSuccess={(email) => {mixpanel.track("Waitlist Join", {"Position": "Top"}); mixpanel.people.set({"$email" : email})}}
           />
         </div>
       </div>

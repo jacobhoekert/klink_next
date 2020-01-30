@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import {CoinContext} from '../contexts/CoinContext';
 import {DialogContext} from '../contexts/DialogContext';
+import mixpanel from 'mixpanel-browser';
 
 const TreasureHuntProvider = ({ children }) => {
   const addOne = (id) => {
+    mixpanel.track("Coin Action", {"Action" : id});
     setCoinProgress(state => ({
       ...state,
       found: [...state.found, id],
@@ -12,6 +14,7 @@ const TreasureHuntProvider = ({ children }) => {
   }
 
   const setProgress = (progress) => {
+    mixpanel.track("Dialog Action", {"Progress" : progress});
     setDialogProgress(state => ({
       ...state,
       progress: progress

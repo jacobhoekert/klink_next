@@ -1,6 +1,7 @@
 import React from 'react';
 import EmailForm from './EmailForm';
 import '../styles/early_access_section.scss';
+import mixpanel from 'mixpanel-browser';
 
 const EarlyAccessSection = () => {
   return (
@@ -10,6 +11,7 @@ const EarlyAccessSection = () => {
       <EmailForm
         databaseCollection="waitlist" 
         successMessage="Thanks for joining our waitlist!"
+        onSuccess={(email) => {mixpanel.track("Waitlist Join", {"Position": "Bottom"}); mixpanel.people.set({"$email" : email})}}
       />
     </section>
   )
