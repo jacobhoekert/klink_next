@@ -5,7 +5,7 @@ import keys from '../mixpanel.config';
 
 class MyApp extends App {
   componentWillMount(){
-    mixpanel.init(keys.dev);
+    mixpanel.init(keys.prod);
   }
 
   componentDidMount(){
