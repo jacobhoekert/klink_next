@@ -40,7 +40,7 @@
         font-size: 4.5rem;
         font-family: 'Catamaran';
         line-height: 4.5rem;
-        color: #373737;
+        color: #444;
         margin-bottom: 24px;
         @media screen and (max-width: 1320px) {
           font-size: 3.5rem;
@@ -54,8 +54,8 @@
           line-height: 4.5rem;
         }
         @media screen and (max-width: 650px) {
-          font-size: 3.2rem;
-          line-height: 3.2rem;
+          font-size: 2.5rem;
+          line-height: 2.5rem;
         }
       }
 
@@ -74,7 +74,7 @@
           font-size: 1.5rem;
         }
         @media screen and (max-width: 650px) {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
         }
       }
     }

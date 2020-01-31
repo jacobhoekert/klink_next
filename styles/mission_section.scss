@@ -20,6 +20,10 @@
       font-size: 48px;
       color: #444;
       margin-bottom: 0px;
+
+      @media screen and (max-width: 650px) {
+        font-size: 35px;
+      }
     }
 
     p{

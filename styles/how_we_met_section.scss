@@ -44,8 +44,10 @@
       font-size: 48px;
       color: #444;
       margin-bottom: 0px;
+      
       @media screen and (max-width: 650px) {
         margin-top: 0px;
+        font-size: 35px;
       }
     }
 

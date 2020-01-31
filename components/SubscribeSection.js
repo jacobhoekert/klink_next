@@ -15,7 +15,7 @@ const SubscribeSection = () => {
           </div>
         )}
       </CoinContext.Consumer>
-      <h1>Subscribe to Klink Winks</h1>
+      <h1>Subscribe to Winks</h1>
       <EmailForm
         databaseCollection="winks" 
         successMessage="Thanks for signing up for Klink Winks!"
