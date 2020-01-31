@@ -24,7 +24,7 @@ const Home = () => {
     <>
       <Head>
         <title>
-          Klink App: Easy and Simple Fundraising | Round Up Donor Spare Change
+          Klink App: The Best Way to Raise Money | Free and Easy
         </title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
