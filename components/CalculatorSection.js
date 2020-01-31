@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/calculator.scss';
+import mixpanel from 'mixpanel-browser';
 
 const CalculatorSection = () => {
   const [donorAmount, setDonorAmount] = useState(15);
   const [monthAmount, setMonthAmount] = useState(6);
   const [totalAmount, setTotalAmount] = useState("1000");
+  const [interacted, setInteracted] = useState(false);
 
   useEffect(() => {
     const total = donorAmount * monthAmount * 13;
@@ -25,13 +27,22 @@ const CalculatorSection = () => {
   }, [donorAmount, monthAmount]);
 
   const handleDonorChange = (e) => {
+    trackInteraction();
     const {value} = e.currentTarget;
     setDonorAmount(value);
   }
 
   const handleMonthChange = (e) => {
+    trackInteraction();
     const {value} = e.currentTarget;
     setMonthAmount(value);
+  }
+
+  const trackInteraction = () => {
+    if(!interacted){
+      mixpanel.track("Calculator Interaction");
+      setInteracted(true);
+    }
   }
 
   return (

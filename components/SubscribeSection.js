@@ -3,6 +3,7 @@ import EmailForm from './EmailForm';
 import '../styles/subscribe_section.scss';
 import coin from '../public/coin.png';
 import {CoinContext} from '../contexts/CoinContext';
+import mixpanel from 'mixpanel-browser';
 
 const SubscribeSection = () => {
   return (
@@ -18,6 +19,7 @@ const SubscribeSection = () => {
       <EmailForm
         databaseCollection="winks" 
         successMessage="Thanks for signing up for Klink Winks!"
+        onSuccess={(email) => {mixpanel.track("Winks Join", {"Position": "Bottom"}); mixpanel.people.set({"$email" : email})}}
       />
     </section>
   )

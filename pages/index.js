@@ -12,12 +12,14 @@ import MobileMenu from "../components/MobileMenu";
 import "../styles/global.css";
 import TreasureHuntProgress from "../components/TreasureHuntProgress";
 import DialogManager from "../components/DialogManager";
+import mixpanel from 'mixpanel-browser';
 
 const Home = () => {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    mixpanel.track("Home Visit");
   }, []);
 
   return (

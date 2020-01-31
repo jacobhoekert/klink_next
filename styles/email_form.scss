@@ -26,7 +26,6 @@
 
       &:focus{
         outline: none !important;
-        background: rgba($color: rgb(107, 28, 211), $alpha: 0.1);
       }
     }
     button{
@@ -34,6 +33,7 @@
       border: none;
       padding: 0;
       outline: none;
+      height: 27px;
 
       i{
         color: #7831D4;
