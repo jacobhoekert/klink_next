@@ -27,3 +27,5 @@ yarn-error.log*
 firebaseConfig.js
 email.config.js
 mixpanel.config.js
+
+.now
