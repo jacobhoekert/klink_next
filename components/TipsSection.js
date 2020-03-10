@@ -16,10 +16,23 @@ const TipsSection = () => {
             <button>Read Full Wink</button>
           </a>
         </div>
-        <div className="wink-item">
-          <img src="/winky-face.jpg" alt="winking smiley face"/>
-          <h3>Come Back For Content Coming Soon!</h3>
-          <p className="wink-date">March 2020</p>
+        <div id="wink2" className="wink-item">
+          <img src="/winks/wink2-image.jpeg" alt=""/>
+          <h3>How Do You Approach Donors While Fundraising?</h3>
+          <p className="wink-date">March 6th, 2020</p>
+          <p className="wink-summary">First impressions are important. Knowing what donors want to hear will help tremendously when seeking out financial assistance. Here are 3 things you can do to bolster your approach...</p>
+          <a href="https://medium.com/klink-winks/how-do-you-approach-donors-while-fundraising-623d6cd3125b">
+            <button>Read Full Wink</button>
+          </a>
+        </div>
+        <div id="wink3" className="wink-item">
+          <img src="/winks/wink3-image.jpeg" alt=""/>
+          <h3>As of Today I am Fully Funded: Why Sharing Your Story Matters</h3>
+          <p className="wink-date">March 9th, 2020</p>
+          <p className="wink-summary">Make it a habit to share your story out of a place of truly believing that your story can and will impact someone watching or reading it...</p>
+          <a href="https://medium.com/klink-winks/as-of-today-i-am-fully-funded-why-sharing-your-story-matters-472c7ac82435">
+            <button>Read Full Wink</button>
+          </a>
         </div>
       </div>
     </section>

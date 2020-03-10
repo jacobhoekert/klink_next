@@ -17,7 +17,7 @@ const Footer = () => {
           <i className="material-icons">arrow_forward</i>
         </div>
         <div className="option">
-          <Link href="/our-team"><div><h1 onClick={() => {sendEvent("Navigate", {"To": "Team", "Position": "Bottom"})}}>Our Team</h1></div></Link>
+          <Link href="/team"><div><h1 onClick={() => {sendEvent("Navigate", {"To": "Team", "Position": "Bottom"})}}>Our Team</h1></div></Link>
           <i className="material-icons">arrow_forward</i>
         </div>
         <div className="option">
